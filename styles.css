@@ -1,0 +1,105 @@
+
+/* --- BODY ----------------------------- */
+
+body {
+	background-color: #F2F2F2;
+	margin: 0;
+	padding: 0;
+}
+
+/* --- HEADER ----------------------------- */
+
+#header
+{
+	background-color: #732929;		/* #732929 */
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+	height: 200px;
+
+	display: flex;
+	justify-content: center;
+}
+
+#header-container
+{
+	margin: auto;
+	width: 75%;
+
+	display: flex;
+	justify-content:space-between;
+}
+
+#header-title-name
+{
+	color: #202020;
+	font-size:  50px;
+	font-family: "Limelight", sans-serif;
+}
+
+#header-title-job
+{
+	color:  #F2F2F2;
+	font-size: 30px;
+	font-family: "Poiret One", sans-serif;
+}
+
+#header-text
+{
+	width: 560px;
+	color:  #F2F2F2;
+	font-size: 27px;
+	font-family: "Poiret One", sans-serif;
+	text-align:right;
+}
+
+/* --- FOOTER ----------------------------- */
+
+#footer
+{
+	width: 100%;
+	height: 125px;
+	background-color: #262626;
+
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-mail
+{
+	color:  #F2F2F2;
+	font-size: 20px;
+	font-family: "Poiret One", sans-serif;
+}
+
+#footer-socials
+{
+	color:  #F2F2F2;
+	font-size: 20px;
+	font-family: "Limelight", sans-serif;
+
+	display: flex;
+	width: 100px;
+	justify-content: space-between;
+}
+
+#footer .icon
+{
+	width: 20px;
+}
+
+#footer .space
+{
+	height: 15px;
+	width: 15px;
+}
+
+/* --- UTILITIES ----------------------------- */
+
+.horizontal-container
+{	display: flex;
+	flex-direction: row;
+}
