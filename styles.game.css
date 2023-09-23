@@ -62,3 +62,62 @@
 	width: 15px;
 	height: 15px;
 }
+
+
+/* ===================================== */
+
+.only-mobile
+{
+	display: none;
+}
+
+@media only screen and (max-width: 700px)
+{
+	.game
+	{
+		width: 100%;
+		padding: 0;
+		height: auto;
+	}
+
+	.game-container
+	{
+		width: 100%;
+		flex-direction: column;
+
+		padding: 30px;
+		
+		gap: 30px;
+	}
+
+	.game-video
+	{
+		width: 100%;
+		height: auto;
+	}
+
+	.game-video iframe
+	{
+		height: 200px;
+	}
+
+	.game-info
+	{
+		width: 100%;
+	}
+
+	.game-title
+	{
+		font-size: 25px;
+	}
+
+	.only-mobile
+	{
+		display: block;
+	}
+
+	.only-desktop
+	{
+		display: none;
+	}
+}
