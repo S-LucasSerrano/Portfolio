@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Loading...</title>
-</head>
-<body>
 	
-</body>
-<script>
-	
-	window.onload = ()=>
-	{
-		var targetUrl = "https://lucasserrano.notion.site/Sergio-Lucas-Serrano-78cba0fd0189429a9e31bb7f895f7959";
-		window.location.replace(targetUrl);
-	}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Loading...</title>
+	</head>
+	<body> </body>
+		
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2PCMPRYHB"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'G-B2PCMPRYHB');
+	</script>
 
-</script>
+	<!-- Redirect to Notion -->
+	<script>
+		window.onload = ()=>
+		{
+			var targetUrl = "https://lucasserrano.notion.site/Sergio-Lucas-Serrano-78cba0fd0189429a9e31bb7f895f7959";
+			window.location.replace(targetUrl);
+		}
+	</script>
+	
 </html>
