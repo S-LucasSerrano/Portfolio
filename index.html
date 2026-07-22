@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D2DAQF3go1Fxp6VBA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1704927996840?e=1725220800&v=beta&t=T7pyMWmkQ_07IpWpPFmrH698pV9XRDf_eqZ6cQ6Lfoc" />
-		<title> S. Lucas Serrano | Technical Game Designer </title>
+		<title>S. Lucas Serrano</title>
 	</head>
 	<body> </body>
 		
@@ -23,7 +23,28 @@
 	<script>
 		window.onload = ()=>
 		{
+			// Load a different version of the portfolio based on the url parameter.
+			var params = new URLSearchParams(document.location.search);
+			var targetPortfolio = params.get("t");
+
+			// Currently, the default is the game programmer portfolio.
 			var targetUrl = "https://lucasserrano.notion.site/Sergio-Lucas-Serrano-2bb3966752938028ba4bead3d08f4051";
+
+			switch(targetPortfolio)
+			{
+				// Game & Software Programmer
+				case "0":
+					break;
+				// Techincal designer
+				case "1":
+					targetUrl = "https://lucasserrano.notion.site/Sergio-Lucas-Serrano-78cba0fd0189429a9e31bb7f895f7959";
+					break;
+				// Combine - Game programmer & designer
+				case "2":
+					targetUrl = "https://lucasserrano.notion.site/Sergio-Lucas-Serrano-3a5396675293806f9eb7eeb62d3975c2";
+					break;
+			}
+
 			window.location.replace(targetUrl);
 		}
 	</script>
